@@ -1,0 +1,135 @@
+.results-container {
+  width: 75vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.select-box {
+  margin-left: 1rem;
+}
+
+select {
+  background-color: $primary-color;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: $secondary-color;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  $secondary-color-space: nowrap;
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+option {
+  background: $secondary-color;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 65vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+  background-color: $primary-color;
+  color: #ffffff;
+  text-align: left;
+}
+
+td,
+th {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid $primary-color;
+}
+
+tbody tr.active-row {
+  font-weight: bold;
+  color: #205349;
+}
+
+tr:hover {
+  background-color: #489e8b;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.35rem 0.75rem;
+  letter-spacing: 1.6px;
+  font-size: 0.75rem;
+  color: $secondary-color;
+  background: $secondary-color;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  bottom: 10px;
+}
+.page-btn {
+  width: 2rem;
+  height: 2rem;
+  background: #489e8b;
+  color: $secondary-color;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: #489e8b;
+}
+.active-btn {
+  background: #414443;
+  color: $secondary-color;
+}
+.prev-btn,
+.next-btn {
+  color: $secondary-color;
+  border: none;
+  border-radius: 5px;
+  background: #489e8b;
+  border-color: #489e8b;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
