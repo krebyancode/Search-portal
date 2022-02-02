@@ -4,12 +4,11 @@ import { data } from "../assets/data";
 export const StorageContext = createContext();
 
 const StorageContextProvider = (props) => {
-  const [people, setPeople] = useState(
-    localStorage.length === 0 ? [] : JSON.parse(localStorage.getItem("data"))
-  );
+  const [people, setPeople] = useState({ cols: [], data: [] });
 
   useEffect(() => {
     localStorage.setItem("data", JSON.stringify(data));
+    setPeople(JSON.parse(localStorage.getItem("data")));
   }, []);
 
   return (
